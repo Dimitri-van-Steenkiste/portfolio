@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #333;
+    --color-one: hsl(315, 50%, 33%);
+    --color-two: hsl(260, 50%, 50%);
+    --color-background: hsl(300, 10%, 100%);
+    background-color: var(--color-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #fff;
+        --color-one: hsl(315, 50%, 67%);
+        --color-two: hsl(260, 50%, 90%);
+        --color-background: hsl(300, 10%, 10%);
+    }
+}
+
+body {
+    margin: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    line-height: 1.25;
+    color: var(--color-text);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+}
+
+.top {
+    width: 100%;
+
+    hgroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+address,
+nav {
+    font-style: normal;
+
+    a {
+        white-space: nowrap;
+    }
+}
+
+header,
+section:not(:last-child) {
+    padding-bottom: 1ch;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin-top: 0.5ch;
+}
+
+h1 {
+    color: var(--color-one);
+}
+
+h2 {
+    color: var(--color-two);
+}
+
+h4 {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+i {
+    font-size: smaller;
+}
+
+ul {
+    margin: 0;
+    list-style: square;
+}
+
+.time {
+    float: right;
+}
+
+@media screen {
+    body {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        margin: 2rem;
+    }
+
+    address a,
+    nav a {
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    html {
+        margin: 2rem auto;
+        width: 8.5in;
+    }
+}
+
+.social-icon {
+    max-height: 15px;
+    max-width: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.lang-switch {
+    width: 50px;
+    height: 50px;
+    all: unset;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.lang-switch:hover {
+    color: rgba(255, 255, 255, 0.8);
+}

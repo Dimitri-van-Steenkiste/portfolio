@@ -1,15 +1,16 @@
 [
     {
-        "name": "Lorem Ipsum",
+        "name": "Conway's Game of Life",
         "link": "mailto:vansteenkisteleodimitri@gmail.com",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": ["Lorem Ipsum", "Dolor Sit", "Amet Consectetur", "Adipiscing Elit", "Sed Do"]
-    }
-    ,
+        "tags": ["Python", "Pygame", "game", "Adipiscing Elit", "Sed Do"],
+        "image": "images/projects/conways_game_of_life.png"
+    },
     {
-        "name": "Lorem Ipsum",
+        "name": "Mastermind",
         "link": "mailto:vansteenkisteleodimitri@gmail.com",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "tags": ["Lorem Ipsum", "Dolor Sit", "Amet Consectetur", "Adipiscing Elit", "Sed Do"]
+        "tags": ["Python", "Pygame", "game", "school project"],
+        "image": "images/mastermind.jpg"
     }
 ]
